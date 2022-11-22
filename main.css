@@ -4,6 +4,15 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-radius: 30px;
+    border: 3px solid black;
+    background: linear-gradient(to right,  #333, #333 25%, #111 75%, #000 100%  );
+}
+
+h1 {
+    font-size:1vw;
+    font-family:Cambria;
+    color: white;
 }
 
 li {
@@ -28,9 +37,10 @@ li a:hover {
 li a.active{
 }
 
-li a.glow{
-    background-color:cyan;
-}
+    li a.glow {
+        background-color: black;
+
+    }
 
 
 .container {
@@ -38,12 +48,14 @@ li a.glow{
     text-align: center;
     color: white;
     
+    
   }
-  
-  img {
+
+img {
     width: 100%;
     height: 100%;
-  }
+    border-radius: 30px;
+}
 
   /* Centered text */
 .centered {
@@ -53,4 +65,9 @@ li a.glow{
     transform: translate(-50%, -50%);
     font-size: 5vw;
     font-family:Cambria;
+    color: white;
   }
+
+body {
+    background-color: #181818;
+}
