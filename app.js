@@ -14,8 +14,23 @@ document.addEventListener('click', function (e) {
 
     mBtn.classList.add('glow');
 
-    if (mBtn.id == "mh") {
-        window.scrollTo(0, 0);
+    switch (mBtn.id) {
+        case 'mh':
+            window.scrollTo(0, 0);
+            break;
+        case 'm1':
+            break;
+        case 'm2':
+            break;
+        case 'm3':
+            break;
+        case 'm4':
+            break;
+        case 'm5':
+            break;
+        case 'm6':
+            window.scrollTo(0, document.body.scrollHeight);
+            break;
     }
 
 });
