@@ -20,6 +20,13 @@ http.createServer(function (req, res) {
                 s.pipe(res);
             });
             break;
+        case "/Images/home.png":
+            var s = fs.createReadStream(__dirname + '/Images/home.png');
+            s.on('open', function () {
+                res.setHeader('Content-Type', 'image/png');
+                s.pipe(res);
+            });
+            break;
         case "/app.js":
             fs.readFile(__dirname + '/app.js', function (error, data) {
                 res.writeHead(200, { 'Content-Type': 'application/javascript' });
