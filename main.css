@@ -108,6 +108,17 @@ input[type=text], select, textarea {
     resize: none;
 }
 
+input[type=file] { /*This Needs Fixing - Tutorial: https://www.quirksmode.org/dom/inputfile.html */
+    width: 40%;
+    background-color: #04AA6D;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 100%;
+}
+
 input[type=submit] {
     width: 40%;
     background-color: white;
@@ -120,26 +131,10 @@ input[type=submit] {
     
 }
 
-input[type=file] { /*This Needs Fixing - Tutorial: https://www.quirksmode.org/dom/inputfile.html */
-    width: 40%;
-    background-color: #04AA6D;
-    color: black;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: 100%;
-}
-
 input[type=submit]:hover {
     background-color: rgb(4 170 109 / 0.19);
 }
 
 input[type=submit]:active{
     background-color: #04AA6D;
-}
-
-.message {
-    
-    
 }
