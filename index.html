@@ -20,21 +20,28 @@
         <img class="splashImg" src="Images/splash-1.jpeg" />
         <div class="centered">Greetings.</div>
     </div>
-    <div class="contact">
-        <form>
-            <a id="header">Contact me</a>
+    <div class="contactContainer">
+        <div class="contact">
+            <form id="form">
+                <h2 id="header">Contact me</h2>
 
-            <label for="email">Email address</label>
-            <input type="text" id="email" name="email" placeholder="Enter Email..." />
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="email" placeholder="Enter Email..." />
 
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Enter Subject..." />
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter Subject..." />
 
-            <label for="message">Message</label>
-            <input type="text" id="message" name="message" placeholder="Enter Message..." />
-
-            <input type="submit" value="Submit">
-        </form>
+                <label for="message">Message</label>
+                <textarea class="message" id="message" name="message" cols="20" rows="5" placeholder="Enter Message..."></textarea>
+                <div class="submission">
+                    <input type="submit" value="Submit">
+                    <input type="file" value="Upload File" />
+                </div>
+            </form>
+        </div>
+        <div class="myInfo">
+            <h3 id="myInfo">Contact Information</h3> <!-- Not Implemented, needs to be on right side of class=contact as in doc -->
+        </div>
     </div>
     <h1>Created by Christian Ritz & Dillon Griffin</h1>
 </body>
